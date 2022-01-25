@@ -1,0 +1,15 @@
+:root {
+  --bodyBackground: hsl(217, 54%, 11%);
+  --cardBackground: hsl(216, 50%, 16%);
+  --lineColor: hsl(215, 32%, 27%);
+  --whiteColor: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bodyBackground);
+}
