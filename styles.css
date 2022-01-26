@@ -3,6 +3,8 @@
   --cardBackground: hsl(216, 50%, 16%);
   --lineColor: hsl(215, 32%, 27%);
   --whiteColor: hsl(0, 0%, 100%);
+  --footerLinkColor: hsl(0, 0%, 75%);
+  --softBlue: hsl(215, 51%, 70%);
 }
 
 * {
@@ -12,4 +14,66 @@
 
 body {
   background-color: var(--bodyBackground);
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--footerLinkColor);
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.mainFrame {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cardBackground);
+  border-radius: 25px;
+
+    width: min-content;
+
+  padding: 2em;
+
+  -webkit-box-shadow: 0px 0px 90px 28px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 90px 28px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 90px 28px rgba(0, 0, 0, 0.2);
+}
+
+.nft {
+  display: block;
+  border-radius: 25px;
+}
+
+.title {
+  margin-top: 1em;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 1em;
+  color: var(--softBlue);
+  font-weight: 300;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+}
+
+/* footer */
+
+.attribution {
+  position: fixed;
+  opacity: 50%;
+  inset-inline: 0;
+  bottom: 0;
+  font-size: 11px;
+  color: var(--lineColor);
+  text-align: center;
 }
